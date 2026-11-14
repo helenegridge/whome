@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de">
+<heade>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webhome</title>
+    <link rel='stylesheet' id='stylesheetMain' href='../css/stylesheet.css'/>
+    <script src="jquery.js"></script>
+    <script src="sitewebshot.js" defer></script>
+</heade>
+<body>
+    <main class="topbar">
+        <div id="titel">
+            <h2>entry</h2>
+        </div>
+    </main >
+    <main class="app">
+        <form id="snapshot-form">
+        <div class="controls">
+            <input
+            id="url"
+            type="url"
+            placeholder="site preview"
+            required
+            >
+            <button type="submit">go</button>
+            <button id="download-button" type="button" disabled>save</button>
+        </div>
+    </form>
+        <p id="status" role="status"></p>
+    <div id="snapshot-container" aria-live="polite">
+      <p class="placeholder"></p>
+    </div>
+    </main>
+</body>
+</html>
