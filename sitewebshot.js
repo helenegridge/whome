@@ -3,7 +3,6 @@ $(function () {
 
   $("#snapshot-form").on("submit", function (event) {
     event.preventDefault();
-
     const input = $("#url").val().trim();
     let pageUrl;
 
