@@ -86,9 +86,9 @@ button:disabled {
 #status {
 min-height: auto;
 }
-.snapshot-container {
+#snapshot-container {
 min-height: 1%;
-width:18%;
+width: 18%;
 overflow: auto;
 display: grid;
 place-items: center;
@@ -97,7 +97,7 @@ border: 1px solid  #2C1054FF;
 border-radius: 6px;
 background: #2C1955FF;
 }
-.snapshot-container img {
+#snapshot-container img {
 display: block;
 max-width: 100%;
 height: auto;
