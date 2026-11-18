@@ -88,6 +88,7 @@ min-height: auto;
 }
 .snapshot-container {
 min-height: 1%;
+width:18%;
 overflow: auto;
 display: grid;
 place-items: center;
