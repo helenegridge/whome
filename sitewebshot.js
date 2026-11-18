@@ -2,7 +2,6 @@ $(function () {
   let snapshotUrl = "";
 
   $("#snapshot-form").on("submit", function (event) {
-    document.body.createElement("snapshot-container");
     event.preventDefault();
 
     const input = $("#url").val().trim();
