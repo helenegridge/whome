@@ -67,7 +67,6 @@ $(function () {
       URL.revokeObjectURL(blobUrl);
     } catch {
       // Bei fehlender CORS-Freigabe den Screenshot in einem Tab öffnen.
-      window.open(snapshotUrl, "_blank", "noopener");
       $("#status").text(
         "Der direkte Download wurde blockiert. Im geöffneten Tab kannst du das Bild speichern."
       );
