@@ -24,28 +24,31 @@ h1 {
 h2 {
     font-size:40px;
     color:#A799FFFF;
-    margin: 0 10px;
+    margin: 0 0px 0 8px;
 }
 
 .topbar{
-    max-width: auto;
+    width: 100%;
     margin: 0 auto;
     padding: 8px;
     background: #100021FF;
     border: 3px solid #190523FF;
     border-radius: 20px;
+    display:flex;
 }
-#divinline {
+/*#divinline {
     display:inline;
     padding:0 20px 0px 20px;
-}
+}*/
 #titel{
-display:flex;
-margin:0px 5px;
+    padding:0px 0px 0px 10px;
+}
+.links-topbar{
+    padding:0px 0px 0px 24px;
 }
 
 .app {
-    padding: 0 24px 16px  24px;
+    padding: 0px 24px 0px  24px;
     background: #100021FF;
     border: 3px solid #190523FF;
     border-radius: 20px;
@@ -59,6 +62,7 @@ input {
     flex: 1;
     min-width: 0;
     padding: 11px 12px;
+    margin-top: 12px;
     border: 1px solid #2C1054FF;
     background: #2C1955FF;
     color: #D8C6F3FF;
@@ -84,30 +88,46 @@ button:disabled {
     opacity: 0.5;
 }
 #status {
-min-height: auto;
+    min-height: auto;
 }
-#snapshot-container {
-min-height: 1%;
-width: 24%;
-overflow: auto;
-display: grid;
-place-items: center;
-padding: 12px;
-border: 1px solid  #2C1054FF;
-border-radius: 6px;
-background: #2C1955FF;
+#snapshots {
+    min-height: 1%;
+    width: 100%;
+    overflow: auto;
+    display: grid;
+ /*   place-items: center;*/
+    place-items: auto;
+    padding: 12px;
+    border: 1px solid  #2C1054FF;
+    border-radius: 6px;
+    background: #2C1955FF;
 }
-#snapshot-container img {
-display: block;
-max-width: 100%;
-height: auto;
+.snapshot-container{
+    width: 30%;
+    overflow: auto;
+    display: grid;
+ /*   place-items: center;*/
+    place-items: auto;
+    padding: 12px;
+    border: 1px solid  #2C1054FF;
+    border-radius: 6px;
+    background: #2C1955FF;
+}
+.snapshot-container img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.snapshot-container a{
+    text-decoration:none;
+    color: #A799FFFF;
 }
 .placeholder {
     color: #2C1054FF;
 }
-#download-button {
+/*#download-button {
     margin-top:16px;
-}
+}*/
 @media (max-width: 600px) {
     .controls {
         flex-direction: column;
