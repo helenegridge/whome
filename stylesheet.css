@@ -103,7 +103,7 @@ button:disabled {
     background: #2C1955FF;
 }
 .snapshot-container{
-    width: 30%;
+    width: 32%;
     overflow: auto;
     display: inline flow-root;
     place-items: center;
