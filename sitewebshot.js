@@ -108,34 +108,4 @@ $(function () {
       }
     );
   });
-
-  $("#download-button").on("click", async function () {
-    if (!snapshotUrl) return;
-
-    try {
-      const response = await fetch(snapshotUrl);
-
-      if (!response.ok) {
-        throw new Error("Download nicht verfügbar.");
-      }
-
-      const blob = await response.blob();
-      const blobUrl = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-
-      link.href = blobUrl;
-      link.download = "snapshot.png";
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-
-      URL.revokeObjectURL(blobUrl);
-    } catch {
-      // Bei fehlender CORS-Freigabe den Screenshot in einem Tab öffnen.
-      window.open(snapshotUrl, "_blank", "noopener");
-      $("#status").text(
-        "Der direkte Download wurde blockiert. Im geöffneten Tab kannst du das Bild speichern."
-      );
-    }
-  });
 });
