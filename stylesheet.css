@@ -45,6 +45,7 @@ h2 {
 }
 .links-topbar{
     padding:0px 0px 0px 24px;
+    display:inline flow-root;
 }
 
 .app {
@@ -61,7 +62,7 @@ h2 {
 input {
     flex: 1;
     min-width: 0;
-    padding: 11px 12px;
+    padding: 12px 12px;
     margin-top: 12px;
     border: 1px solid #2C1054FF;
     background: #2C1955FF;
@@ -91,34 +92,34 @@ button:disabled {
     min-height: auto;
 }
 #snapshots {
-    min-height: 1%;
+ /*   min-height: 1%;*/
     width: 100%;
     overflow: auto;
-    display: grid;
- /*   place-items: center;*/
+    display: inline;
     place-items: auto;
-    padding: 12px;
-    border: 1px solid  #2C1054FF;
+   /* padding: 12px 12px;
+    border: 1px solid  #2C1054FF;*/
     border-radius: 6px;
     background: #2C1955FF;
 }
 .snapshot-container{
     width: 30%;
     overflow: auto;
-    display: grid;
- /*   place-items: center;*/
+    display: inline flow-root;
+    place-items: center;
     place-items: auto;
-    padding: 12px;
+    padding: 12px 12px;
     border: 1px solid  #2C1054FF;
     border-radius: 6px;
     background: #2C1955FF;
 }
 .snapshot-container img{
-    display: block;
+ /*   display: block;*/
     max-width: 100%;
     height: auto;
 }
 .snapshot-container a{
+    margin-top:3px;
     text-decoration:none;
     color: #A799FFFF;
 }
